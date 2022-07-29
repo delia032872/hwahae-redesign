@@ -1,0 +1,493 @@
+/* 폰트 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+  font-family: 'Noto Sans KR', sans-serif;
+  }
+
+@font-face {
+  font-family: "ROKAFSansBold";
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ROKAFSansMedium";
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font setting - section1 */
+.setting-1{
+  font-size:15px ;
+  font-family: "ROKAFSansMedium";
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 27px;
+  display: inline-block;
+}
+
+/* 노멀라이징 */
+html , body{
+  margin:0;  padding:0;
+}
+
+.cell {
+  float:left;
+  box-sizing:border-box;
+}
+.row::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+ul , li {
+  margin :0;
+  padding :0;
+  list-style:none;
+}
+
+.con{
+  margin-left:auto;
+  margin-right:auto;
+  }
+
+.con{
+  width:1200px;
+}
+
+.img-box{
+  height: 100%;
+}
+
+.img-box > img{
+  width:100%;
+  display:block;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 라이브러리 */
+
+/* top-bar st */
+.main_home > .top-bar {
+  width: 100%;
+  height: 80px;
+  background-color: #5edfdf;
+  font-family: "ROKAFSansBold";
+}
+
+.main_home .logo-box{
+  width: 154px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.main_home > .top-bar > .menu-bar{
+  color: white;
+  text-align: center;
+  width: calc(100% - 154px);
+  height: 80px;
+}
+
+.main_home > .top-bar > .menu-bar li{
+  display: inline-block;
+  width: 113px;
+  font-size:1.3rem;
+  margin-right: 39px;
+  margin-left: 39px;
+  letter-spacing:2px;
+  transition: 0.3s;
+}
+
+.main_home > .top-bar > .menu-bar li:hover{
+  background-color: white;
+  color: #5edfdf;
+  border-radius: 7px;
+}
+
+.main_home > .top-bar > .menu-bar li > a{
+  display: block;
+  padding: 10px;
+  height: 80px;
+  line-height: 60px;
+}
+/* top-bar en */
+
+/* banner st */
+.main_home > .banner{
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+  background-color: #dad;
+}
+
+.main_home > .banner > .text{
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  font-size: 40px;
+  left:394px ;
+  font-family: "ROKAFSansMedium";
+}
+
+.main_home > .banner > .text .bold{
+  font-family: "ROKAFSansBold";
+}
+
+.dots{
+  display: flex ;
+  position: absolute ;
+  bottom: 7px ;
+  left: 50% ;
+  transform: translateX(-50%) ;
+}
+.dots >li{
+  width: 14px;
+  height: 14px;
+  background-color: #D9D9D9;
+  border-radius: 50% ;
+  margin-right: 94px;
+  opacity: 0.7;
+}
+.dots >li.active{
+  background-color: #5edfdf;
+  opacity: 0.7 ;
+}
+
+
+.banner > .slide{
+  min-width: 1200px;
+  height: 650px;
+}
+
+/* banner en */
+
+/* section1 st */
+
+.section1{
+  margin-top: 76px;
+  height: 688px;
+  color: #242424;
+  position: relative;
+}
+
+.square{
+  position: absolute;
+  width: 34px;
+  height: 101px;
+  background-color: #5edfdf;
+  display: block;
+}
+
+.section1 > .text{
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.section1 > .text > .title{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "ROKAFSansMedium";
+  margin-bottom: 36px;
+}
+
+.section1 .sub-title{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section1 > .main-box{
+  margin: 0 auto;
+  width: 1085px;
+  height: 442px;
+}
+
+.section1 .box1{
+  width: 337px;
+  height: 462px;
+  display: inline-block;
+}
+
+.section1 .box1 > .img-box{
+  width: 337px;
+  height: 300px;
+}
+
+.section1 > .main-box i{
+  fill: #242424;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.section1 > .main-box > .box1 > .contents{
+  font-family:'Noto Sans KR', sans-serif ;
+  font-weight: nomal;
+  font-size: 14px;
+  display: block;
+}
+
+.all-btn{
+  color:#43919B;
+  display: inline-block;
+  margin-left: 551px;
+  margin-bottom:76px ;
+}
+
+.all-btn > a{
+  display: block;
+}
+
+.all-btn .text-btn{
+  display: inline-block;
+  font-weight: 500;
+  font-family: "ROKAFSansMedium";
+  text-underline-offset:3px;
+  text-decoration : underline;
+  text-decoration-thickness: 2px;
+}
+
+.section1 .box2{
+  width: 337px;
+  height: 462px;
+  display: inline-block;
+  margin-left: 32px;
+}
+
+.section1 .box2 > .img-box{
+  width: 337px;
+  height: 300px;
+}
+
+.section1 .box2 > .title{
+  font-size:15px ;
+  font-family: "ROKAFSansMedium";
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 27px;
+  display: inline-block;
+}
+
+.section1 .box2 > .contents{
+  font-family:'Noto Sans KR', sans-serif ;
+  font-weight: nomal;
+  font-size: 14px;
+  display: block;
+}
+
+.section1 .box3{
+  width: 337px;
+  height: 462px;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+}
+
+.section1 .box3 > .after{
+  display: inline-block;
+  width: 337px;
+  height: 300px;
+  background-color: #43919b17;
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow: hidden;
+  margin-bottom: 17px;
+}
+
+.section1 .box3 > .after > .title{
+  font-size: 14px;
+  color: #3a3a3a ;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 10px ;
+  margin-top: 19px;
+}
+
+.section1 .box3 > .after > .id{
+  font-size: 12px;
+  color:#787878;
+  display: inline-block;
+  margin-bottom: 11px;
+}
+
+.section1 .box3 > .after > .letter{
+  font-size: 13px;
+  color:#393939;
+  margin-bottom: 11px;
+  display: block;
+}
+
+.section1 .box3 > .img-box{
+  width: 311px;
+  height: 166px;
+}
+
+.section1 .box3 > .title{
+  font-size:15px ;
+  font-family: "ROKAFSansMedium";
+  font-weight: 600;
+  display: inline-block;
+}
+
+.section1 .box3 > .contents{
+  font-family:'Noto Sans KR', sans-serif ;
+  font-weight: nomal;
+  font-size: 14px;
+  display: block;
+  margin-top: 28px;
+}
+
+/* section1 en */
+
+/* section2 st */
+.section2{
+  margin-top: 76px;
+  height: 688px;
+  color: #242424;
+  position: relative;
+}
+
+.section2 > .text{
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.section2 > .text > .title{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "ROKAFSansMedium";
+  margin-bottom: 36px;
+
+}
+
+.section2 .sub-title{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section2 > .all-btn{
+  margin-left: 650px;
+}
+
+.section2 > .slide-contents > .slide_set{
+  width: 990px;
+  height: 455px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+}
+
+.text_nomal{
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section2 .text_center
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.section2 > .slide-contents > .slide_set > .text > .title{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section2 .sub{
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 59px;
+}
+
+.section2 > .slide-contents > .slide_set > .text > .contents{
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 755px;
+  text-underline-offset:3px;
+  text-decoration : underline;
+  text-decoration-thickness: 2px;
+  margin-top: 121px;
+  display: inline-block;
+}
+
+.section2 .img-box{
+  width: 990px;
+  height: 455px;
+}
+
+/* section2 en */
+
+/* section3 st */
+.section3{
+  margin-top: 76px;
+  height: 688px;
+  color: #242424;
+  position: relative;
+}
+
+.section3 > .text{
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.section3 > .text > .title{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "ROKAFSansMedium";
+  margin-bottom: 36px;
+}
+
+.section3 > .text > .sub-title{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section3 > .all-btn{
+  margin-left: 690px ;
+}
+
+.section3 > .box{
+  width: 990px;
+  height: 455px;
+  background-color: #dad;
+}
+
+.section3 .img-box{
+  width: 595px;
+  height: 455px;
+  display: inline-block;
+}
+
+.section3 .contents-box{
+  width: calc( 990px - 595px );
+  height: 455px;
+  background-color: #30AADD;
+  color: white;
+  display: inline-block;
+}
+/* section3 en */
+
+/* footer st */
+.main_home > .footer{
+  width: 100%;
+  height: 200px;
+  background-color: #5edfdf;
+  color: white;
+}
+/* footer en */
