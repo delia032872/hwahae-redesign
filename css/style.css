@@ -140,6 +140,9 @@ ul , li {
   font-family: "ROKAFSansMedium";
 }
 
+p{
+  margin: 0;
+}
 
 .main_home > .banner > .text .bold{
   font-family: "ROKAFSansBold";
