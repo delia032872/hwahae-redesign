@@ -146,7 +146,6 @@ p{
 
 .main_home > .banner > .text .bold{
   font-family: "ROKAFSansBold";
-  background-color: blue;
 }
 
 .dots{
@@ -479,20 +478,60 @@ p{
   width: 990px;
   height: 455px;
   background-color: #dad;
-}
-
-.section3 .img-box{
-  width: 595px;
-  height: 455px;
+  margin: auto;
   display: inline-block;
 }
 
+.section3 .img-box{
+  width: 560px;
+  height: 449px;
+  display: inline-block;
+  border: #30AADD solid 3px;
+}
+
 .section3 .contents-box{
-  width: calc( 990px - 595px );
+  width: calc( 100% - 570px );
   height: 455px;
   background-color: #30AADD;
   color: white;
   display: inline-block;
+  vertical-align: top;
+}
+
+.section3 .contents-box > .title{
+  font-size: 28px;
+  font-family: "ROKAFSansMedium";
+  font-weight: 500;
+}
+
+.section3 .contents-box > .sub{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.section3 .today_view-btn{
+  color: #30AADD;
+  background-color: white;
+  width: 207px;
+  height: 48px;
+  border-radius: 10px;
+}`
+
+.section3 .today_view-btn > a{
+  display: block;
+  width: 207px;
+  height: 48px;
+  margin-left: 16px;
+}
+
+.section3 .today_view-btn p{
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 13px;
+  margin-right: 14px;
 }
 /* section3 en */
 
