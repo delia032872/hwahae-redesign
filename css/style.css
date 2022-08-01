@@ -148,30 +148,30 @@ p{
   font-family: "ROKAFSansBold";
 }
 
-.dots{
-  display: flex ;
-  position: absolute ;
-  bottom: 7px ;
-  left: 50% ;
-  transform: translateX(-50%) ;
-}
-.dots >li{
-  width: 14px;
-  height: 14px;
-  background-color: #D9D9D9;
-  border-radius: 50% ;
-  margin-right: 94px;
-  opacity: 0.7;
-}
-.dots >li.active{
-  background-color: #5edfdf;
-  opacity: 0.7 ;
-}
-
-
 .banner > .slide{
   min-width: 1200px;
   height: 650px;
+}
+
+.slide_con .slick-dots li{
+  margin-left: 40px;
+}
+
+.slide_con .slick-dots li:first-child{
+  margin-left: 0px;
+}
+
+.slide_con .slick-dots li button::before {
+  color: #5edfdf;
+  font-size:15px;
+}
+
+.slide_con .slick-dots li.slick-active button::before {
+  color:#5edfdf;
+}
+
+.slide_con{
+  padding: 0;
 }
 
 /* banner en */
@@ -366,7 +366,6 @@ p{
   margin-top: 76px;
   height: 688px;
   color: #242424;
-  position: relative;
 }
 
 .section2 > .text{
@@ -390,6 +389,29 @@ p{
 
 .section2 > .all-btn{
   margin-left: 650px;
+}
+
+.slide-contents{
+  display: inline-block;
+  width: 990px;
+  margin: auto;
+}
+
+.slide-contents .slick-dots li{
+  margin-left: 40px;
+}
+
+.slide-contents .slick-dots li:first-child{
+  margin-left: 0px;
+}
+
+.slide-contents .slick-dots li button::before {
+  color: #5edfdf;
+  font-size:15px;
+}
+
+.slide-contents .slick-dots li.slick-active button::before {
+  color:#5edfdf;
 }
 
 .section2 > .slide-contents > .slide_set{
@@ -477,9 +499,8 @@ p{
 .section3 > .box{
   width: 990px;
   height: 455px;
-  background-color: #dad;
-  margin: auto;
-  display: inline-block;
+  margin: 0 auto;
+  display: block;
 }
 
 .section3 .img-box{
@@ -490,21 +511,29 @@ p{
 }
 
 .section3 .contents-box{
-  width: calc( 100% - 570px );
+  min-width: 424px;
   height: 455px;
   background-color: #30AADD;
   color: white;
-  display: inline-block;
   vertical-align: top;
+  display: inline-block;
+  float: right;
 }
 
-.section3 .contents-box > .title{
+.section3 .contents-box > .text{
+  margin-left: 40px;
+  margin-top: 110px;
+  margin-bottom: 150px;
+}
+
+.section3 .contents-box .title{
   font-size: 28px;
   font-family: "ROKAFSansMedium";
   font-weight: 500;
+  margin-bottom: 36px;
 }
 
-.section3 .contents-box > .sub{
+.section3 .contents-box .sub{
   font-size: 14px;
   font-weight: 400;
   font-family: 'Noto Sans KR', sans-serif;
@@ -516,7 +545,8 @@ p{
   width: 207px;
   height: 48px;
   border-radius: 10px;
-}`
+  margin-left: 174px;
+}
 
 .section3 .today_view-btn > a{
   display: block;
@@ -541,5 +571,44 @@ p{
   height: 200px;
   background-color: #5edfdf;
   color: white;
+  position: relative;
+}
+
+.footer > .company_name{
+  font-family:"ROKAFSansMedium" ;
+  font-size: 20px;
+  font-weight: bolder;
+  display: inline-block;
+  margin-top: 42px;
+  margin-left: 355px;
+  
+}
+
+.footer > .company_info{
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 13px;
+  
+}
+
+.footer > .company_rights{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 32px;
+  font-size: 12px;
+  
+}
+
+.footer > .sns{
+  display: inline-block;
+  font-size: 35px ;
+  margin-top: 35px;
+  vertical-align: text-top;
+  position: absolute;
+  top:0;
+  right:363px;
+}
+
+.footer > .sns > i{
+  margin-left: 21px;
 }
 /* footer en */
